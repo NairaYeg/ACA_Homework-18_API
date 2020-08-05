@@ -1,7 +1,6 @@
 import {tbody} from '../script.js'
 
 const addTableRow = (film) =>{
-
     const newRow = tbody.insertRow(tbody.length)
 
     let filmTitle = newRow.insertCell(0)
@@ -11,11 +10,11 @@ const addTableRow = (film) =>{
     let filmReleaseDate = newRow.insertCell(4)
 
     
-    filmTitle.innerText = `Title: ${film.title}`
-    filmDescription.innerText = `Description: ${film.description}`
-    filmDirector.innerText = `Director: ${film.director}`
-    filmProducer.innerText = `Producer: ${film.producer}`
-    filmReleaseDate.innerText = `Release Date: ${film.release_date}`
+    filmTitle.innerText = `Title:  ${film.title}`
+    filmDescription.innerText = `Description:  ${film.description}`
+    filmDirector.innerText = `Director:  ${film.director}`
+    filmProducer.innerText = `Producer:  ${film.producer}`
+    filmReleaseDate.innerText = `Release Date:  ${film.release_date}`
 
     return newRow;
 }
