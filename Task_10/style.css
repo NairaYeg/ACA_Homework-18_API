@@ -1,0 +1,25 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    width: 100%;
+    margin: 30px;
+}
+
+table thead h1 {
+    text-align: center;
+}
+
+tbody {
+    display: grid;
+    grid-gap: 30px;
+}
+
+table tbody tr td {
+    display: block;
+}
+
+tfoot p {
+    text-align: center;
+}
