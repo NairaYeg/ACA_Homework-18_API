@@ -34,3 +34,12 @@ tfoot p {
     text-align: center;
     padding-top: 10px;
 }
+
+.key {
+    display: inline;
+}
+
+.value {
+    display: inline;
+    font-style: italic;
+}
