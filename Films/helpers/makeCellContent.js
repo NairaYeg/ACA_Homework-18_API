@@ -1,8 +1,8 @@
 function makeCellContent(key, value) {
   
-    let content = document.createElement("div");
-    let contentKey = document.createElement("h4");
-    let contentValue = document.createElement("p");
+    const content = document.createElement("div");
+    const contentKey = document.createElement("h4");
+    const contentValue = document.createElement("p");
   
     contentKey.textContent = `${key}`;
     contentValue.textContent = `${value}`;

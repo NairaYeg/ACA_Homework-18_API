@@ -9,7 +9,7 @@
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Naira Yeghiazaryan">
         <title>
-            Dog breeds
+            Dogs
         </title>
         <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io_dog_face/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io_dog_face/favicon-32x32.png">
@@ -18,6 +18,21 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-
+        <select name="breed" id="breeds">
+          <option disabled selected>Select a breed</option>
+          <option value="akita">Akita</option>
+          <option value="beagle">Beagle</option>
+          <option value="dalmatian">Dalmatian</option>
+          <option value="germanshepherd">German Shepherd</option>
+          <option value="husky">Husky</option>
+          <option value="labrador">Labrador</option>
+          <option value="pug">Pug</option>
+          <option value="retriever">Golden Retriever</option>
+          <option value="spaniel">Cocker Spaniel</option>
+        </select>
+        <div class="wrapper">
+            <img alt='dog selected by breed' width="500px" class="hide-img"/>
+        </div>
+        <script type="module" src="./script.js"></script>
     </body>
 </html>
