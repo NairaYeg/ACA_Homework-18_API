@@ -6,7 +6,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
 body {
     background-color: #f7f7f7cc;
 }
@@ -55,6 +54,10 @@ tfoot tr td {
     margin:30px 3px;
     padding: 0px 5px;
     cursor: pointer;
+}
+
+.pagination-btn:hover{
+    background-color: rgb(133, 132, 132);
 }
 
 footer p {

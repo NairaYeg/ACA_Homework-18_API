@@ -4,14 +4,13 @@ import {makePaginationButtons} from './helpers/makePaginationButtons.js'
 import {rowsPerPage} from './helpers/constants.js'
 
 
-
 const input = document.querySelector('#book-input')
 const searchBtn = document.querySelector('.search-btn')
-export const thead = document.querySelector('thead')
-export const tbody = document.querySelector('tbody')
-export const tfoot = document.querySelector('tfoot')
+const thead = document.querySelector('thead')
+const tbody = document.querySelector('tbody')
+const tfoot = document.querySelector('tfoot')
 const numFound = document.querySelector('#numFound')
-export let bookName;
+let bookName = '';
 let pageCount;
 
 
@@ -48,3 +47,6 @@ searchBtn.addEventListener("click", (event) => {
 
   input.value = "";
 });
+
+
+export {thead, tbody, tfoot, bookName} 

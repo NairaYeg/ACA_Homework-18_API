@@ -19,6 +19,7 @@ export function makePaginationButtons(pageCount) {
      btn.addEventListener("click", (event) => {
        currentPage = i;
        tbody.innerText = 'Loading.....'
+
        let url = makeNewURL(bookName, currentPage)
        fetch(url)
          .then(r => r.json())
