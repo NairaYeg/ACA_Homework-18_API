@@ -1,8 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body {
+    background-color: #f7f7f7cc;
 }
 
 header {
@@ -20,11 +26,40 @@ header {
     border-radius: 5px;
 }
 
+thead tr th {
+    padding: 20px 70px;
+    text-align: center;
+}
+
 main {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     background-color: #f7f7f7cc;
 }
 
-footer p {
-    margin-top: 610px;
+table {
+    margin: 10px 100px;
+}
+
+table tr td {
     text-align: center;
+}
+
+.pagination-btn{
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+footer p {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 35%;
+
+    background-color: #CCCCCC;
+    opacity: 0.9;
 }
