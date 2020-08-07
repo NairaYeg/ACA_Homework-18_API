@@ -1,6 +1,6 @@
 import {tfoot} from '../script.js'
 import {makeNewURL} from './makeNewURL.js'
-import {searchValue} from '../script.js'
+import {bookName} from '../script.js'
 import {createNewRow} from './createNewRow.js'
 import {tbody} from '../script.js'
 
@@ -14,22 +14,20 @@ export function makePaginationButtons(pageCount) {
      btn.classList.add("pagination-btn");
      btn.innerText = `${i}`;
      row.appendChild(btn)
+
+
      btn.addEventListener("click", (event) => {
        currentPage = i;
        tbody.innerText = 'Loading.....'
-       let url = makeNewURL(searchValue, currentPage)
+       let url = makeNewURL(bookName, currentPage)
        fetch(url)
          .then(r => r.json())
-         .then(r => {
+         .then(books => {
             tbody.innerText = ''
-            r.docs.forEach((item) => {
-               createNewRow(item.title, item.author_name, item.publish_year, item.subject);
+            books.docs.forEach((book) => {
+               createNewRow(book.title, book.author_name, book.publish_year, book.subject);
              })
          })
-      
-
-       console.log(currentPage);
-       console.log(makeNewURL(searchValue, currentPage)); 
      })
    }
 }    
