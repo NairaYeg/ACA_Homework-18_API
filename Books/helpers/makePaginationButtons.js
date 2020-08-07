@@ -24,6 +24,7 @@ export function makePaginationButtons(pageCount) {
        fetch(url)
          .then(r => r.json())
          .then(books => {
+           console.log(books.start)
             tbody.innerText = ''
             books.docs.forEach((book) => {
                createNewRow(book.title, book.author_name, book.publish_year, book.subject);

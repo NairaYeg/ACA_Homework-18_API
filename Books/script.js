@@ -25,20 +25,20 @@ searchBtn.addEventListener("click", (event) => {
 
   fetch(url)
     .then((r) => r.json())
-    .then((r) => {
+    .then((books) => {
       tbody.innerText = "";
-      numFound.innerText = `${r.numFound}`;
+      numFound.innerText = `${books.numFound}`;
 
-      if (r.numFound === 0) {
+      if (books.numFound === 0) {
         tbody.innerText = `Your search did not match any documents.....`;
         return;
       }
-
-      pageCount = Math.ceil(r.numFound / rowsPerPage);
+     
+      pageCount = Math.ceil(books.numFound / rowsPerPage);
       makePaginationButtons(pageCount);
 
-      r.docs.forEach((item) => {
-        createNewRow(item.title, item.author_name, item.publish_year,item.subject);
+      books.docs.forEach((book) => {
+        createNewRow(book.title, book.author_name, book.publish_year, book.subject);
       });
     })
     .catch((error) => {
