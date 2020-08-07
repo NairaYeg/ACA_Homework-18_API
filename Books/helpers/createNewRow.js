@@ -20,8 +20,6 @@ export function createNewRow(title, name, year, subject){
     authorNameCell.innerText = name
     publishedYearCell.innerText = firstPublishYear
     subjectCell.innerText = sliceFirstThreeItems(subject)
-    console.log(year)
-    console.log(subject)
     
     return newRow;
 }
