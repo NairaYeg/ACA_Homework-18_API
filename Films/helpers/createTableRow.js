@@ -1,7 +1,7 @@
 import {tbody} from '../script.js'
 import {makeCellContent} from './makeCellContent.js'
 
-const addTableRow = (film) =>{
+const createTableRow = (film) =>{
     const newRow = tbody.insertRow(tbody.length)
 
     const titleCell = newRow.insertCell(0)
@@ -19,6 +19,6 @@ const addTableRow = (film) =>{
     return newRow;
 }
 
-export {addTableRow}
+export {createTableRow}
 
 

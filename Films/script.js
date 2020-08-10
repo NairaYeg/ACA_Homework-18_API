@@ -1,5 +1,5 @@
 import {doGet} from './helpers/request.js'
-import {addTableRow} from './helpers/addTableRow.js'
+import {createTableRow} from './helpers/createTableRow.js'
 
 export const tbody = document.querySelector('tbody')
 const thead = document.querySelector('thead')
@@ -14,6 +14,6 @@ doGet('https://ghibliapi.herokuapp.com/films')
     title.style.display = 'block'
     copyright.style.display = 'block'
     films.map(film =>{ 
-       addTableRow(film) 
+       createTableRow(film) 
     })
 })
