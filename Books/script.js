@@ -2,6 +2,7 @@ import {makeNewURL} from './helpers/makeNewURL.js'
 import {createNewRow} from './helpers/createNewRow.js'
 import {makePaginationButtons} from './helpers/makePaginationButtons.js'
 import {rowsPerPage} from './helpers/constants.js'
+import {doGet} from './helpers/request.js'
 
 
 const input = document.querySelector('#book-input')
@@ -23,8 +24,7 @@ searchBtn.addEventListener("click", (event) => {
 
   const url = makeNewURL(input.value);
 
-  fetch(url)
-    .then((r) => r.json())
+  doGet(url)
     .then((books) => {
       tbody.innerText = "";
       numFound.innerText = `${books.numFound}`;
