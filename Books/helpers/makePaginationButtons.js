@@ -27,7 +27,7 @@ export function makePaginationButtons(pageCount) {
            console.log(books.start)
             tbody.innerText = ''
             books.docs.forEach((book) => {
-               createNewRow(book.title, book.author_name, book.publish_year, book.subject);
+               createNewRow(book.title, book.author_name, book.publish_year, book.subject, tbody);
              })
          })
      })

@@ -1,14 +1,13 @@
-import {tbody} from '../script.js'
 import {sliceFirstThreeItems} from './sliceFirstThreeItems.js'
 
-export function createNewRow(title, name, year, subject){
+export function createNewRow(title, name, year, subject, body){
 
     let isNotValid = !title || !name || !year || !subject
     if (isNotValid) {
           return;
     }
 
-    const newRow = tbody.insertRow(tbody.length)
+    const newRow = body.insertRow(body.length)
     const titleCell = newRow.insertCell(0)
     const authorNameCell = newRow.insertCell(1)
     const publishedYearCell = newRow.insertCell(2)

@@ -38,7 +38,7 @@ searchBtn.addEventListener("click", (event) => {
       makePaginationButtons(pageCount);
 
       books.docs.forEach((book) => {
-        createNewRow(book.title, book.author_name, book.publish_year, book.subject);
+        createNewRow(book.title, book.author_name, book.publish_year, book.subject, tbody);
       });
     })
     .catch((error) => {
