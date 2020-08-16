@@ -1,4 +1,4 @@
-import {BASE_URL} from './constants.js'
+import {BASE_URL} from '../constants/api.js'
 
 export function makeNewURL(bookName, page = 1) {
 

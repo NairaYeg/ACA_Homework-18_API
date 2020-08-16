@@ -1,7 +1,7 @@
 import {makeNewURL} from './helpers/makeNewURL.js'
-import {createNewRow} from './helpers/createNewRow.js'
-import {makePaginationButtons} from './helpers/makePaginationButtons.js'
-import {rowsPerPage} from './helpers/constants.js'
+import {createNewRow} from './render.js'
+import {makePaginationButtons} from './render.js'
+import {rowsPerPage} from './constants/rowsPerPage.js'
 import {doGet} from './helpers/request.js'
 
 

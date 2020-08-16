@@ -3,7 +3,7 @@ export function sliceFirstThreeItems(subject) {
     let [first, second, third, ...rest] = subjectArr;
     let tmp = [];
     tmp.push(first, second, third);
-    let firstFhreeItems = tmp.join("");
-    return firstFhreeItems;
+    let firstThreeItems = tmp.join("");
+    return firstThreeItems;
   }
   
